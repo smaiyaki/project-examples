@@ -16,6 +16,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <build.number>SNAPSHOT</build.number>
+        <build.tag>TAG</build.tag>
     </properties>
 <!--Added by Sultan-->
     <distributionManagement>
@@ -23,8 +24,8 @@
    <id>lv-maven-staging-local</id>
    <url>
    http://localhost:8081/artifactory/lv-maven-staging-local; 
-   buildNumber=${buildNumber}; 
-   revision=${revision}
+   buildNumber=${build.number}; 
+   buildTag=${build.tag}
    </url>
 </repository>
 </distributionManagement>
